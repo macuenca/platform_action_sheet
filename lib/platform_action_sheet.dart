@@ -54,6 +54,7 @@ CupertinoActionSheetAction _cupertinoActionSheetActionFromAction(
       child: Text(action.text),
       onPressed: action.onPressed,
       isDefaultAction: action.defaultAction,
+      isDestructiveAction: action.destructiveAction,
     );
 
 ListTile _listTileFromAction(ActionSheetAction action) => action.hasArrow
@@ -121,6 +122,9 @@ class ActionSheetAction {
   /// Is this a default action - especially for iOS
   final bool defaultAction;
 
+  /// Is this a destructive action - especially for iOS
+  final bool destructiveAction;
+
   /// This is a cancel option - especially for iOS
   final bool isCancel;
 
@@ -132,6 +136,7 @@ class ActionSheetAction {
     @required this.text,
     @required this.onPressed,
     this.defaultAction = false,
+    this.destructiveAction = false,
     this.isCancel = false,
     this.hasArrow = false,
   });
