@@ -1,8 +1,8 @@
-name: platform_action_sheet
+name: platform_action_sheets
 description: ActionSheet for Cupertino and Android
 version: 0.0.3
 author: Aidan Mc Evoy <aidan.mcevoy1@gmail.com>
-homepage: https://github.com/Amazing-Aidan/platform_action_sheet/
+homepage: https://github.com/macuenca/platform_action_sheets/
 
 environment:
   sdk: ">=2.1.0 <3.0.0"

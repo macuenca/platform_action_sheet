@@ -1,8 +1,9 @@
-# Platform action sheet
+# Platform action sheets
 
 [![Platform](https://img.shields.io/badge/Platform-Flutter-brightgreen)](https://flutter.dev/)
-[![Pub](https://img.shields.io/badge/Pub-V0.0.3-blue)](https://pub.dev/packages/platform_action_sheet)
+[![Pub](https://img.shields.io/badge/Pub-V0.0.3-blue)](https://pub.dev/packages/platform_action_sheets)
 
+This package is a fork of [platform_action_sheet by Aidan Mc Evoy](https://pub.dev/packages/platform_action_sheet) with added support for destructive actions on iOS
 
 This package is a simple platform specific actionSheet for Cupertino and Android with the following options:
 - Text - *(Required)* String to display
@@ -78,6 +79,7 @@ class Home extends StatelessWidget {
                       text: "Option 1",
                       onPressed: () => Navigator.pop(context),
                       hasArrow: true,
+                      isDestructiveAction: true,
                     ),
                     ActionSheetAction(
                       text: "Option 2",
